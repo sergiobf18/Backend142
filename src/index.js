@@ -1,11 +1,10 @@
 const express = require ('express');
 const conectarDB = require('../configdb/db');
 const cors = require('cors');
-
+const port =  process.env.PORT || 5000;
 
 const app = express();
-const puerto = 5000;
-const port =  process.env.PORT || 7000;
+
 
 // llamamos a nuestra función conectarDB
 conectarDB();
